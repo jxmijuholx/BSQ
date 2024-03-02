@@ -4,6 +4,8 @@ Mission:
     - Write a program that draws and prints
     the biggest possible square in the given area
 
+----------------------------------------------------------------
+
 Needs/wants/nice2know for this program:
 
     - The file containing THE MAP
@@ -45,7 +47,9 @@ Needs/wants/nice2know for this program:
 
     - You must have a valid Makefile
 
-    THE RULES OF THE ALL MIGHTY 
+----------------------------------------------------------------
+
+  THE RULES OF THE ALL MIGHTY
                 MAP
     
     1. All lines must have the same length!
@@ -70,3 +74,41 @@ Needs/wants/nice2know for this program:
         followed by a line break
         -> your program will then move
         on to the next map
+
+    • Here’s an example of how it should work :
+    %>cat example_file
+9.ox
+...........................
+....o......................
+............o..............
+...........................
+....o......................
+...............o...........
+...........................
+......o..............o.....
+..o.......o................
+
+%>./bsq example_file
+.....xxxxxxx...............
+....oxxxxxxx...............
+.....xxxxxxxo..............
+.....xxxxxxx...............
+....oxxxxxxx...............
+.....xxxxxxx...o...........
+.....xxxxxxx...............
+......o..............o.....
+..o.......o................
+%>
+
+This example explained:
+ - 9 lines which is basically the HEIGHT
+ - . is the character used to draw empty
+ - o are the obstacles
+ - x is the char for the square
+ - So what is representing the width?
+ -> we probably have to calculate it ourselves by
+ reading the map and storing the count of characters
+ on each line on it's own variable
+ -> int x = the length of the 2nd line in the map
+ 
+----------------------------------------------------------------
