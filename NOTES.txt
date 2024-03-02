@@ -110,5 +110,29 @@ This example explained:
  reading the map and storing the count of characters
  on each line on it's own variable
  -> int x = the length of the 2nd line in the map
- 
+
 ----------------------------------------------------------------
+
+SO WHAT MAKES THIS PROJECT HARD
+
+1. The algorithm is hard
+2. The arguments our program reads
+    - all file/files that we
+    need to use to read the square
+    -> we plan, decide and implement
+3. Only few external libraries can be used:
+    - Open()
+    - Close()
+    - Read()
+    - Write()
+    - Malloc()
+    - Free()
+    - Exit()
+4. libft is not applicable
+
+
+----------------------------------------------------------------
+
+WHAT DID THE FULL STACK MACHINE SAY?
+
+---> Use pascal's pyramid :3 hihi uWu
