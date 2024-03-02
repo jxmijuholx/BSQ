@@ -1,0 +1,72 @@
+BSQ
+
+Mission:
+    - Write a program that draws and prints
+    the biggest possible square in the given area
+
+Needs/wants/nice2know for this program:
+
+    - The file containing THE MAP
+    will be passed as an argument to our
+    bsq program
+
+    - The map is made of:
+        - "empty" characters
+        - lines
+        - "obstacle" characters
+    So the aim of the program is:
+        to replace empty characters
+        by 'full' characters
+        -> the full characters represent
+        the biggest square possible in the
+        given area
+        ------------------------------------
+        so, we need to find the biggest square possible
+        and fill it with characters to display it
+
+    - The first line of the all mighty map
+    contains info about itself
+        - The number of line on the map
+        - The 'empty' characters
+        - The 'obstacle' character
+        - The 'full' characters
+
+    - Your program must handle 1 to n ->
+    one to many files as parametres
+
+    - When your program receives MORE THAN one
+    maps in the argument, each solution
+    must be followed by a line break
+    or a 'map error' -message
+
+    - If there is no arguments given
+    the program must be able to read
+    on the standard input
+
+    - You must have a valid Makefile
+
+    THE RULES OF THE ALL MIGHTY 
+                MAP
+    
+    1. All lines must have the same length!
+    2. There's atleast ONE LINE of
+        atleast ONE  BOX
+    3. If (end of line)
+            line break
+    4. The characters named on the
+        1st line of the map
+        ARE THE ONLY CHARACTERS TO BE USED
+        ON THE MAP
+    5. Map === 'invalid' if
+        a character is missing
+        from the first line
+        or if
+        two characters are identical
+    6. The characters can be ANY
+        printable characters, even integers
+    7. In case of an invalid map
+        the program should display
+        MAP ERROR on the error output
+        followed by a line break
+        -> your program will then move
+        on to the next map
