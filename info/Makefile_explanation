@@ -1,0 +1,22 @@
+Explanation of each part:
+
+CC: Specifies the compiler to use.
+CFLAGS: Compiler flags to be used.
+TARGET: Name of the executable.
+SRCS: List of source files.
+OBJS: List of object files.
+all: Default target, builds the executable.
+$(TARGET): Specifies the executable depends on object files.
+$(OBJS): Specifies object files depend on source files.
+%.o: %.c: Pattern rule to build object files from corresponding source files.
+clean: Target to clean object files.
+fclean: Target to clean object files and executable.
+re: Target to perform a clean build.
+
+To use this Makefile, place it in the same directory as your source files
+(main.c, parse.c, validate.c, find_square.c, print_map.c),
+and then run make command in the terminal.
+This will compile your program into an executable named bsq.
+You can also run make clean to remove the object files,
+make fclean to remove both object files and the executable,
+and make re to perform a clean build.

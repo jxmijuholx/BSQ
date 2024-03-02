@@ -1,0 +1,44 @@
+Algorithm:
+
+Begin by prompting the user to input the number of rows (rows) they want in Pascal's Triangle.
+Use nested loops to iterate through each row and column of the triangle.
+For each row, calculate the coefficients of the elements using the formula for combinations (binomial coefficients).
+Print each coefficient with proper formatting to create the triangle shape.
+Mathematical Concept:
+
+Pascal's Triangle is a triangular array of numbers where each number is the sum of the two numbers directly above it.
+The elements of Pascal's Triangle represent the coefficients of the binomial expansion of (a + b)^n, where n is the row number starting from 0.
+Each row of Pascal's Triangle corresponds to the coefficients of the terms in the expansion of (a + b)^n for a specific value of n.
+The binomial coefficient "n choose k" (written as C(n, k) or nCk) represents the number of ways to choose k elements from a set of n elements without regard to the order.
+The formula to calculate the binomial coefficient is: C(n, k) = n! / (k! * (n - k)!), where "!" denotes factorial.
+
+/*
+#include <stdio.h>
+
+// Function to calculate factorial
+int factorial(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+
+int main() {
+    int rows;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j <= i; j++) {
+            // Calculate the coefficient using the binomial coefficient formula
+            int coef = factorial(i) / (factorial(j) * factorial(i - j));
+            printf("%d ", coef);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+*/
